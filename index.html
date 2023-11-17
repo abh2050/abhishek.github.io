@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Abhishek's GitHub Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek's Portfolio</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background: linear-gradient(to right, #6dd5ed, #2193b0); /* Stylish gradient background */
             color: #333;
             line-height: 1.6;
         }
@@ -15,12 +17,16 @@
             width: 80%;
             margin: auto;
             overflow: hidden;
+            background-color: #ffffff; /* Background for content areas */
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adding some shadow for depth */
+            border-radius: 8px; /* Optional rounded corners */
+            margin-bottom: 20px; /* Spacing between sections */
         }
         header {
             background: #333;
             color: #fff;
-            padding-top: 30px;
-            min-height: 70px;
+            padding: 20px 0;
             border-bottom: #3d85c6 3px solid;
         }
         header a {
@@ -32,35 +38,37 @@
         header ul {
             padding: 0;
             list-style: none;
+            display: flex;
         }
         header li {
-            float: left;
-            display: inline;
-            padding: 0 20px 0 20px;
+            padding: 0 20px;
         }
         header #branding {
-            float: left;
+            display: flex;
+            align-items: center;
         }
         header #branding h1 {
             margin: 0;
         }
         header nav {
-            float: right;
-            margin-top: 10px;
-        }
-        header .highlight, header .current a {
-            color: #e8491d;
-            font-weight: bold;
-        }
-        header a:hover {
-            color: #ffffff;
-            font-weight: bold;
+            margin-left: auto;
+            display: flex;
+            align-items: center;
         }
         .repository {
-            padding: 15px;
             background: #fff;
             border: #ccc 1px solid;
             margin-bottom: 5px;
+            padding: 15px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .project-img {
+            width: 100px;
+            height: auto;
+            border-radius: 5px;
         }
         footer {
             padding: 20px;
@@ -75,28 +83,68 @@
     <header>
         <div class="container">
             <div id="branding">
-                <h1><span class="highlight">Abhishek's</span> GitHub Repositories</h1>
+                <h1>Abhishek's Portfolio</h1>
             </div>
             <nav>
                 <ul>
-                    <li class="current"><a href="https://abh2050.github.io">Home</a></li>
-                    <li><a href="https://github.com/abh2050">Profile</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <div class="container">
-        <section id="main">
-            <h1>Welcome!</h1>
-            <p>Here you can find a collection of my work on various projects.</p>
-            <h2>Popular Repositories</h2>
-            <div class="repository"><a href="https://github.com/abh2050/Codes-PDX">Codes PDX</a> - Jupyter Notebook</div>
-            <div class="repository"><a href="https://github.com/abh2050/bostonhousepricing">Boston House Pricing</a> - Jupyter Notebook</div>
-            <div class="repository"><a href="https://github.com/abh2050/potatodisease">Potato Disease Detection</a> - Deep Learning Project</div>
-            <div class="repository"><a href="https://github.com/abh2050/stockanalysis">Stock Analysis</a> - Deep Learning for Stock Analysis</div>
-            <div class="repository"><a href="https://github.com/abh2050/OutcoSF-outco-class-161">OutcoSF Outco Class 161</a> - Outco HWs</div>
-            <div class="repository"><a href="https://github.com/abh2050/gitprac">Git Practice</a> - Jupyter Notebook</div>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Introduce yourself here. Talk about your skills, experiences, and what you're passionate about.</p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <!-- Repeat the structure below for each project, replacing the image source and project details -->
+            <div class="repository">
+                <img src="https://via.placeholder.com/100" alt="Codes PDX Image" class="project-img">
+                <div>
+                    <h3><a href="https://github.com/abh2050/Codes-PDX">Codes PDX</a></h3>
+                    <p>Jupyter Notebook</p>
+                </div>
+            </div>
+            <div class="repository">
+                <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/272712547.jpg?k=24bd447de6a7a32731ff26098ad92c03c5710f62e71bcb74b0a7fd21f363ff2d&o=&hp=1" alt="Boston House Pricing Image" class="project-img">
+                <div>
+                    <h3><a href="https://github.com/abh2050/bostonhousepricing">Boston House Pricing</a></h3>
+                    <p>Jupyter Notebook</p>
+                </div>
+            </div>
+            <div class="repository">
+                <img src="https://miro.medium.com/v2/resize:fit:626/1*Jog6mtQAGB8p8_ieITAhXw.jpeg" alt="Recommender_system" class="project-img">
+                <div>
+                    <h3><a href="https://github.com/abh2050/Codes/tree/main/Recommender_system">Recommender_system</a></h3>
+                    <p>Jupyter Notebook</p>
+                </div>
+            </div>
+            <div class="repository">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnRkPH3UH56XEkcjv9c1FJXJhlumsEzUSzAfErusM-5g&s" alt="potato disease" class="project-img">
+                <div>
+                    <h3><a href="https://github.com/abh2050/potatodisease">Potato Disease</a></h3>
+                    <p>Jupyter Notebook</p>
+                </div>
+            </div>
+            <div class="repository">
+                <img src="https://cdn.mos.cms.futurecdn.net/avQoSGU9uTjFCgtCW3Rrhk.jpg" alt="stock Analysis" class="project-img">
+                <div>
+                    <h3><a href="https://github.com/abh2050/stockanalysis">Stock Analysis</a></h3>
+                    <p>Jupyter Notebook</p>
+                </div>
+            </div>
+            <div class="repository">
+                <img src="https://www.stanford.edu/class/stats202/figs/Chapter3/3.1.png" alt="Linear Regression" class="project-img">
+                <div>
+                    <h3><a href="https://github.com/abh2050/Codes/tree/main/computationallearningtheory">Linear Regression</a></h3>
+                    <p>Jupyter Notebook</p>
+                </div>
+            </div>
         </section>
     </div>
 
@@ -105,4 +153,3 @@
     </footer>
 </body>
 </html>
-
