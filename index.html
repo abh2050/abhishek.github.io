@@ -3,102 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f7;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        /* Header */
+        header {
+            background-color: #000;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+        
+        /* Main Content */
+        main {
+            padding: 40px;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        
+        /* Projects */
+        #projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 40px;
+        }
+        
+        .repository {
+            width: 300px;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        .project-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .repository div {
+            padding: 20px;
+        }
+        
+        .repository h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .repository p {
+            font-size: 16px;
+            color: #666;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #000;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Apple</h1>
+        <p>Discover the latest technology and innovation</p>
+    </header>
+
+    <main>
+        <h1>About Us</h1>
+        <p>Hello! I'm Abhishek, dedicated and results-driven Data & Machine Learning Engineer with a proven track record at industry-leading companies like Intel. My expertise lies in transforming complex data into actionable insights and predictive models that drive efficiency and cost savings.</p>
+        <p>My journey through the realms of data has led me to specialize in streaming analytics, machine learning, and data engineering. I thrive on challenges that involve building algorithms for real-time analytics, hyperparameter tuning for model accuracy, and creating robust data validation systems. My approach is rooted in agile methodologies, ensuring swift and efficient project deliveries that align with business objectives.</p>
+        <p>Portland, OR is my home base, where I continue to innovate and lead in the tech space. With a Master of Artificial Intelligence and Machine Learning on the horizon and a solid foundation in Engineering and Technology Management, I am committed to staying at the forefront of technology and leading projects that leave a significant impact.</p>
+        <p>Explore my portfolio to see how I leverage technologies like T-SQL, Azure, GCP, and Python, along with my PMP and DataCamp certifications, to turn data challenges into opportunities.</p>
+        <p>Let's connect and explore how we can collaborate on future technologies and projects.</p>
+    </main>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="repository">
+            <img src="https://www.apple.com/ac/structured-data/images/knowledge_graph_logo.png" alt="Apple Project" class="project-img">
+            <div>
+                <h3><a href="https://www.apple.com">Apple Project</a></h3>
+                <p>Official Apple Website</p>
+            </div>
+        </div>
+        <div class="repository">
+            <img src="https://www.apple.com/ac/structured-data/images/knowledge_graph_logo.png" alt="Apple Project" class="project-img">
+            <div>
+                <h3><a href="https://www.apple.com">Apple Project</a></h3>
+                <p>Official Apple Website</p>
+            </div>
+        </div>
+        <div class="repository">
+            <img src="https://www.apple.com/ac/structured-data/images/knowledge_graph_logo.png" alt="Apple Project" class="project-img">
+            <div>
+                <h3><a href="https://www.apple.com">Apple Project</a></h3>
+                <p>Official Apple Website</p>
+            </div>
+        </div>
+        <div class="repository">
+            <img src="https://www.apple.com/ac/structured-data/images/knowledge_graph_logo.png" alt="Apple Project" class="project-img">
+            <div>
+                <h3><a href="https://www.apple.com">Apple Project</a></h3>
+                <p>Official Apple Website</p>
+            </div>
+        </div>
+        <div class="repository">
+            <img src="https://www.apple.com/ac/structured-data/images/knowledge_graph_logo.png" alt="Apple Project" class="project-img">
+            <div>
+                <h3><a href="https://www.apple.com">Apple Project</a></h3>
+                <p>Official Apple Website</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Created by Abhishek</p>
+    </footer>
+</body>
+</html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abhishek's Portfolio</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(to right, #6dd5ed, #2193b0); /* Stylish gradient background */
+            background-color: black; /* Set background color to black */
             color: #333;
             line-height: 1.6;
         }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-            background-color: #ffffff; /* Background for content areas */
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adding some shadow for depth */
-            border-radius: 8px; /* Optional rounded corners */
-            margin-bottom: 20px; /* Spacing between sections */
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding: 20px 0;
-            border-bottom: #3d85c6 3px solid;
-        }
-        header a {
-            color: #fff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
-        }
-        header ul {
-            padding: 0;
-            list-style: none;
-            display: flex;
-        }
-        header li {
-            padding: 0 20px;
-        }
-        header #branding {
-            display: flex;
-            align-items: center;
-        }
-        header #branding h1 {
-            margin: 0;
-        }
-        header nav {
-            margin-left: auto;
-            display: flex;
-            align-items: center;
-        }
-        .repository {
-            background: #fff;
-            border: #ccc 1px solid;
-            margin-bottom: 5px;
-            padding: 15px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            display: flex;
-            align-items: center;
-            gap: 20px;
-        }
-        .project-img {
-            width: 100px;
-            height: auto;
-            border-radius: 5px;
-        }
-        footer {
-            padding: 20px;
-            margin-top: 20px;
-            color: #ffffff;
-            background-color: #333;
-            text-align: center;
-        }
+        /* Rest of the CSS code... */
     </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div id="branding">
-                <h1>Abhishek's Portfolio</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <div class="container">
-        <section id="about">
-            <h2>About Me</h2>
-            <p>
-                Welcome to Abhishek K. Shah's Professional Portfolio
+    <!-- Rest of the HTML code... -->
+</body>
+</html>
 
                 Hello! I'm Abhishek, dedicated and results-driven Data & Machine Learning Engineer with a proven track record at industry-leading companies like Intel. My expertise lies in transforming complex data into actionable insights and predictive models that drive efficiency and cost savings.
                 
